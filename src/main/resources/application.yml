@@ -1,0 +1,3 @@
+my:
+  first-name: ${MY_FIRST_NAME}
+  last-name: ${MY_LAST_NAME}
