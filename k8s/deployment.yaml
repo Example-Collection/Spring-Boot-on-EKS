@@ -16,7 +16,7 @@ spec:
         app: spring
     spec:
       containers:
-      - image: robbyra98/planit-dev:lamd64
+      - image: robbyra98/demo:amd64
         imagePullPolicy: Always
         name: demo-spring-app
         envFrom:
