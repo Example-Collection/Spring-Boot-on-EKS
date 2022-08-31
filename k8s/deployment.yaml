@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-dp
+  labels:
+    app: spring
+  namespace: demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spring
+  template:
+    metadata:
+      labels:
+        app: spring
+    spec:
+      containers:
+      - image: robbyra98/planit-dev:lamd64
+        imagePullPolicy: Always
+        name: demo-spring-app
+        envFrom:
+        - secretRef:
+            name: demo-secret
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+
