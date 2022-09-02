@@ -7,10 +7,10 @@ metadata:
     alb.ingress.kubernetes.io/load-balancer-name: demo-alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/subnets: ${PublicSubnet01}, ${PublicSubnet02}, ${PublicSubnet03}
+    alb.ingress.kubernetes.io/subnets: subnet-07f97eaa984b5ced2, subnet-02b5356084f4355cb, subnet-0a79d22a3acf610bf
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn:  ${ACM_CERT_ARN}
-    alb.ingress.kubernetes.io/security-groups: ${ALB_SECURITY_GROUP_ID}
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:598334522273:certificate/11ad2c0b-a72a-4c65-8a5b-e0d75db6afe5
+    alb.ingress.kubernetes.io/security-groups: sg-0a18b0bdf0a324210
     alb.ingress.kubernetes.io/healthcheck-port: '8080'
     alb.ingress.kubernetes.io/healthcheck-path: /v1/health
     alb.ingress.kubernetes.io/success-codes: '200'

@@ -9,6 +9,6 @@ spec:
       app: spring
   securityGroups:
     groupIds:
-      - ${POD_SECURITY_GROUP_ID}
-      - ${EKS_CLUSTER_SECURITY_GROUP_ID}
+      - sg-05698b10291227eae
+      - sg-0118babf1bc154066
 
